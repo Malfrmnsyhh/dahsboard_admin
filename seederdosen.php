@@ -44,18 +44,18 @@ for ($i = 1; $i <= 75; $i++) {
 
     $nama_asli = $fname . ' ' . $lname;
     $prodi_key = array_rand($prodi_list);           
-    $kode_nip  = $prodi_list[$prodi_key]['kode'];    
+    $kode_nip = $prodi_list[$prodi_key]['kode'];    
     $kode_email = $prodi_list[$prodi_key]['email'];  
-    $gDepan    = $gelarDepan[array_rand($gelarDepan)];
+    $gDepan = $gelarDepan[array_rand($gelarDepan)];
     $gBelakang = $gelarBelakang[array_rand($gelarBelakang)];
     $gelar_akademik = ($gDepan ? $gDepan . ' ' : '') . $nama_asli . ', ' . $gBelakang;
     $nip = '19' . rand(70, 95) . '120127' . $kode_nip . str_pad($i, 2, '0', STR_PAD_LEFT);
     $nama_email = strtolower(str_replace(' ', '.', $fname . '.' . $lname));
-    $email      = $nama_email . '@' . $kode_email . 'upnjatim.ac.id';
-    $no_telp   = '0812' . rand(10000000, 99999999);
-    $alamat    = 'Perumahan Dosen Blok ' . chr(rand(65, 90)) . ' No ' . rand(1, 50);
+    $email = $nama_email . '@' . $kode_email . 'upnjatim.ac.id';
+    $no_telp = '0812' . rand(10000000, 99999999);
+    $alamat = 'Perumahan Dosen Blok ' . chr(rand(65, 90)) . ' No ' . rand(1, 50);
     $tgl_lahir = randomDate('1970-01-01', '1994-12-31');
-    $status    = $statusDsn[array_rand($statusDsn)]; 
+    $status = $statusDsn[array_rand($statusDsn)]; 
 
     $stmt->bind_param(
         'ssssssssss',

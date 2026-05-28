@@ -91,9 +91,9 @@ require_once '../../templates/sidebar.php';
                     <td><?= $no++ ?></td>
                     <td><span class="badge bg-secondary"><?= htmlspecialchars($row['nip']) ?></span></td>
                     <td>
-                      <strong><?= htmlspecialchars($row['nama']) ?>,
+                      <strong><?= htmlspecialchars($row['nama']) ?>
                       </strong><br>
-                      <small class="text-muted"><?= htmlspecialchars($row['email']) ?></small>
+                      <small class="text-muted d-block"><?= htmlspecialchars($row['email']) ?></small>
                     </td>
                     <td><?= htmlspecialchars($row['program_studi']) ?></td>
                     <td>
