@@ -1,0 +1,34 @@
+:root {
+    /* Brand Colors (Updated Palette) */
+    --space-indigo: #22223bff;
+    --prussian-blue: rgb(63, 84, 130);
+    --orange: #fca311ff;
+    --alabaster-grey: #e5e5e5ff;
+    --white: #ffffffff;
+    --black: #000000ff;
+
+    /* Legacy mapping for compatibility with existing CSS */
+    --navy:      var(--space-indigo);
+    --navy-mid:  var(--prussian-blue);
+    --gold:      var(--orange);
+    --gold-lt:   #ffb84d; /* lighter version of orange if needed */
+    --cream:     var(--alabaster-grey);
+
+    /* Text */
+    --text-primary:   var(--black);
+    --text-muted:     #64748b;
+
+    /* UI */
+    --border-color:   rgba(0,0,0,0.08);
+    --radius-sm:      6px;
+    --radius-md:      10px;
+    --radius-lg:      16px;
+}
+
+/* Dark mode override */
+[data-bs-theme="dark"] {
+    --text-primary:   var(--white);
+    --text-muted:     #94a3b8;
+    --border-color:   rgba(255,255,255,0.08);
+    --alabaster-grey: #121212;
+}

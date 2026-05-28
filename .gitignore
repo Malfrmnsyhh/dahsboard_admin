@@ -1,0 +1,29 @@
+﻿# System files
+.DS_Store
+Thumbs.db
+
+# IDE/editor directories
+.vscode/
+.idea/
+*.code-workspace
+
+# Temp files
+*~
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Local environment files
+.env
+.env.local
+.env.*.local
+
+# Node / PHP dependency directories (jika ada nanti)
+node_modules/
+vendor/
+
+# Local database files
+*.sqlite
+*.db
