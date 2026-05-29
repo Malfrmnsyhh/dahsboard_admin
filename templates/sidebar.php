@@ -1,11 +1,7 @@
 <?php
-// Deteksi halaman aktif berdasarkan URL sekarang
-// basename() → ambil nama file saja dari full path
-// Contoh: /project/modules/mahasiswa/index.php → index.php
 $current_page = basename($_SERVER['PHP_SELF']);
 $current_dir = basename(dirname($_SERVER['PHP_SELF']));
 
-// Helper: return class 'active' kalau cocok
 function isActive($dir = '', $file = '')
 {
   global $current_dir, $current_page;
@@ -44,6 +40,12 @@ function isActive($dir = '', $file = '')
         <a href="<?= BASE_URL ?>modules/dosen/index.php" class="nav-item <?= isActive('dosen') ?>">
           <i class="fi fi-rr-chalkboard-user nav-icon"></i>
           <span class="nav-label">Dosen</span>
+        </a>
+      </li>
+      <li>
+        <a href="<?= BASE_URL ?>modules/prodi/index.php" class="nav-item <?= isActive('prodi') ?>">
+          <i class="fi fi-rr-data-report nav-icon"></i>
+          <span class="nav-label">Rekap per-Prodi</span>
         </a>
       </li>
     </ul>
