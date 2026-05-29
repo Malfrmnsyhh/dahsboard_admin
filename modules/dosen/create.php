@@ -67,11 +67,11 @@ require_once '../../templates/sidebar.php';
             </div>
             <div class="col-md-6">
               <label class="form-label text-muted fw-bold" style="font-size: 0.85rem;">No. Telepon</label>
-              <input type="text" class="form-control" name="no_telp">
+              <input type="text" class="form-control" name="no_telp" placeholder="08xxxxxxxxxx">
             </div>
             <div class="col-md-12">
               <label class="form-label text-muted fw-bold" style="font-size: 0.85rem;">Alamat</label>
-              <textarea class="form-control" name="alamat" rows="3"></textarea>
+              <textarea class="form-control" name="alamat" rows="3" placeholder="Alamat tempat tinggal"></textarea>
             </div>
             <div class="col-md-6">
               <label class="form-label text-muted fw-bold" style="font-size: 0.85rem;">Tanggal Lahir</label>

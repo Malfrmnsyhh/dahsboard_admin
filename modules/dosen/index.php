@@ -32,6 +32,33 @@ require_once '../../templates/header.php';
 require_once '../../templates/sidebar.php';
 ?>
 
+<div class="modal fade" id="modalHapus" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content rounded-4 border-0 shadow">
+      <div class="modal-body p-4 text-center">
+        <div class="rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+          style="width:64px;height:64px;background:rgba(220,53,69,0.1);">
+          <i class="fi fi-rr-trash fs-3 text-danger"></i>
+        </div>
+        <h5 class="fw-bold mb-1">Hapus Data Dosen?</h5>
+        <p class="text-muted mb-0">Anda akan menghapus data:</p>
+        <p class="fw-semibold mb-3" id="namaHapus" style="color:var(--prussian-blue)"></p>
+        <p class="text-muted" style="font-size:0.85rem;">
+          Konfirmasi untuk menghapus data!
+        </p>
+      </div>
+      <div class="modal-footer border-0 justify-content-center pb-4 gap-2">
+        <button type="button" class="btn btn-outline-secondary px-4" data-bs-dismiss="modal">
+          Batal
+        </button>
+        <a href="#" id="linkHapus" class="btn btn-danger px-4">
+          Ya, Hapus
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <main class="main-content">
   <div class="container-fluid p-4">
     <div class="d-flex justify-content-between align-items-center mb-4">
@@ -109,10 +136,10 @@ require_once '../../templates/sidebar.php';
                       <a href="edit.php?id=<?= $row['id_dosen'] ?>" class="btn btn-sm btn-outline-primary" title="Edit">
                         <i class="fi fi-rr-edit"></i>
                       </a>
-                      <a href="delete.php?id=<?= $row['id_dosen'] ?>" class="btn btn-sm btn-outline-danger" title="Hapus"
-                        onclick="return confirm('Yakin ingin menghapus data ini?')">
+                      <button class="btn btn-sm btn-outline-danger" data-bs-toggle="modal" data-bs-target="#modalHapus"
+                        data-id="<?= $row['id_dosen'] ?>" data-nama="<?= htmlspecialchars($row['nama']) ?>" title="Hapus">
                         <i class="fi fi-rr-trash"></i>
-                      </a>
+                      </button>
                     </td>
                   </tr>
                 <?php endwhile; ?>
@@ -187,5 +214,14 @@ require_once '../../templates/sidebar.php';
     </div>
   </div>
 </main>
+<script>
+  document.getElementById('modalHapus').addEventListener('show.bs.modal', function (e) {
+    const btn = e.relatedTarget;
+    const id = btn.getAttribute('data-id');
+    const nama = btn.getAttribute('data-nama');
 
+    document.getElementById('namaHapus').textContent = nama;
+    document.getElementById('linkHapus').href = 'delete.php?id=' + id;
+  });
+</script>
 <?php require_once '../../templates/footer.php'; ?>
