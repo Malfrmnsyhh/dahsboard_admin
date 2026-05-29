@@ -49,23 +49,23 @@ require_once '../../templates/sidebar.php';
             <div class="row g-3">
                 <div class="col-md-6">
                     <label class="form-label text-muted fw-bold" style="font-size: 0.85rem;">NIM</label>
-                    <input type="text" class="form-control" name="nim" required>
+                    <input type="text" class="form-control" name="nim" required placeholder="840202410001">
                 </div>
                 <div class="col-md-6">
                     <label class="form-label text-muted fw-bold" style="font-size: 0.85rem;">Nama Lengkap</label>
-                    <input type="text" class="form-control" name="nama" required>
+                    <input type="text" class="form-control" name="nama" required placeholder="Muhammad Akmal Firmansyah">
                 </div>
                 <div class="col-md-6">
                     <label class="form-label text-muted fw-bold" style="font-size: 0.85rem;">Email</label>
-                    <input type="email" class="form-control" name="email">
+                    <input type="email" class="form-control" name="email" placeholder="nama@upnjatim.ac.id">
                 </div>
                 <div class="col-md-6">
                     <label class="form-label text-muted fw-bold" style="font-size: 0.85rem;">No. Telepon</label>
-                    <input type="text" class="form-control" name="no_telp">
+                    <input type="text" class="form-control" name="no_telp" placeholder="08xxxxxxxxxx">
                 </div>
                 <div class="col-md-12">
                     <label class="form-label text-muted fw-bold" style="font-size: 0.85rem;">Alamat</label>
-                    <textarea class="form-control" name="alamat" rows="3"></textarea>
+                    <textarea class="form-control" name="alamat" rows="3" placeholder="Alamat tempat tinggal"></textarea>
                 </div>
                 <div class="col-md-4">
                     <label class="form-label text-muted fw-bold" style="font-size: 0.85rem;">Jenis Kelamin</label>
