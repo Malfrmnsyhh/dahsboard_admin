@@ -103,7 +103,7 @@ require_once '../../templates/sidebar.php';
                     <form action="" method="POST">
                         <div class="mb-3">
                             <label class="form-label text-muted fw-bold" style="font-size: 0.85rem;">Username (Tidak bisa diubah)</label>
-                            <input type="text" class="form-control" style="background-color: var(--navy);" value="<?= htmlspecialchars($admin['username']) ?>" readonly>
+                            <input type="text" class="form-control" value="<?= htmlspecialchars($admin['username']) ?>" readonly>
                         </div>
                         <div class="mb-3">
                             <label class="form-label text-muted fw-bold" style="font-size: 0.85rem;">Nama Lengkap</label>
