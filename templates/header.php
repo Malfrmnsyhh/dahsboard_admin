@@ -288,7 +288,7 @@ $user_admin = $_SESSION['admin_user'] ?? 'admin';
             <hr class="dropdown-divider my-1">
           </li>
           <li>
-            <a class="dropdown-item" href="#">
+            <a class="dropdown-item" href="<?= BASE_URL ?>modules/profil/index.php">
               <i class="fi fi-rr-user"></i> Profil Saya
             </a>
           </li>
