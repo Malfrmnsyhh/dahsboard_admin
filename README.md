@@ -197,7 +197,7 @@ http://localhost/Project/auth/login.php
 
 **Muhammad Akmal Firmansyah**
 
-> Proyek ini dikembangkan sebagai bagian dari tugas akademik dan portofolio pengembangan web.
+> Proyek ini dikembangkan sebagai bagian dari tugas akademik.
 
 ---
 
