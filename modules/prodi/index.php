@@ -106,7 +106,7 @@ require_once '../../templates/sidebar.php';
             <h6 class="text-muted mb-1 text-uppercase fw-semibold" style="font-size: 0.75rem; letter-spacing: 0.5px;">
               Teknik Informatika</h6>
             <h2 class="fw-bold mb-0" style="color: var(--prussian-blue);"><?= $totMhsInformatika ?> <span
-                class="fs-6 fw-normal text-muted">Mhs</span></h2>
+                class="fs-6 fw-normal text-muted">Mahasiswa</span></h2>
           </div>
           <div class="mt-3">
             <a href="<?= BASE_URL ?>modules/mahasiswa/index.php?q=Teknik Informatika"
@@ -117,7 +117,7 @@ require_once '../../templates/sidebar.php';
           </div>
         </div>
       </div>
-      
+
       <div class="card border-0 shadow-sm rounded-4 me-3"
         style="min-width: 260px; flex: 0 0 auto; background-color: var(--cream)">
         <div class="card-body p-4 d-flex flex-column justify-content-between" style="min-height: 200px;">
@@ -140,7 +140,7 @@ require_once '../../templates/sidebar.php';
           </div>
         </div>
       </div>
-      
+
       <div class="card border-0 shadow-sm rounded-4 me-3"
         style="min-width: 260px; flex: 0 0 auto; background-color: var(--cream)">
         <div class="card-body p-4 d-flex flex-column justify-content-between" style="min-height: 200px;">
@@ -163,7 +163,7 @@ require_once '../../templates/sidebar.php';
           </div>
         </div>
       </div>
-      
+
       <div class="card border-0 shadow-sm rounded-4 me-3"
         style="min-width: 260px; flex: 0 0 auto; background-color: var(--cream)">
         <div class="card-body p-4 d-flex flex-column justify-content-between" style="min-height: 200px;">
@@ -186,7 +186,7 @@ require_once '../../templates/sidebar.php';
           </div>
         </div>
       </div>
-      
+
       <div class="card border-0 shadow-sm rounded-4 me-3"
         style="min-width: 260px; flex: 0 0 auto; background-color: var(--cream)">
         <div class="card-body p-4 d-flex flex-column justify-content-between" style="min-height: 200px;">
@@ -209,7 +209,7 @@ require_once '../../templates/sidebar.php';
           </div>
         </div>
       </div>
-      
+
       <div class="card border-0 shadow-sm rounded-4 me-3"
         style="min-width: 260px; flex: 0 0 auto; background-color: var(--cream)">
         <div class="card-body p-4 d-flex flex-column justify-content-between" style="min-height: 200px;">
@@ -232,7 +232,7 @@ require_once '../../templates/sidebar.php';
           </div>
         </div>
       </div>
-      
+
       <div class="card border-0 shadow-sm rounded-4 me-3"
         style="min-width: 260px; flex: 0 0 auto; background-color: var(--cream)">
         <div class="card-body p-4 d-flex flex-column justify-content-between" style="min-height: 200px;">
@@ -269,102 +269,166 @@ require_once '../../templates/sidebar.php';
     <div class="d-flex flex-nowrap overflow-auto pb-3 mb-4 scroll-horizontal">
 
       <div class="card border-0 shadow-sm rounded-4 me-3"
-        style="min-width: 250px; flex: 0 0 auto; background-color: var(--cream)">
-        <div class="card-body p-4">
-          <div class="d-flex justify-content-between align-items-center mb-3">
-            <span class="badge bg-primary-subtle text-primary rounded-3 px-3 py-2">IF</span>
-            <i class="fi fi-rr-graduation-cap text-muted fs-4"></i>
+        style="min-width: 260px; flex: 0 0 auto; background-color: var(--cream)">
+        <div class="card-body p-4 d-flex flex-column justify-content-between" style="min-height: 200px;">
+          <div>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge bg-primary-subtle text-primary rounded-3 px-3 py-2">IF</span>
+              <i class="fi fi-rr-graduation-cap text-muted fs-4"></i>
+            </div>
+            <h6 class="text-muted mb-1 text-uppercase fw-semibold" style="font-size: 0.75rem; letter-spacing: 0.5px;">
+              Teknik Informatika</h6>
+            <h2 class="fw-bold mb-0" style="color: var(--prussian-blue);"><?= $totDsnInfor ?> <span
+                class="fs-6 fw-normal text-muted">Dosen</span></h2>
           </div>
-          <h6 class="text-muted mb-1 text-uppercase fw-semibold" style="font-size: 0.75rem; letter-spacing: 0.5px;">
-            Teknik Informatika</h6>
-          <h2 class="fw-bold mb-0" style="color: var(--prussian-blue);"><?= $totDsnInfor ?> <span
-              class="fs-6 fw-normal text-muted">Dosen</span></h2>
+          <div class="mt-3">
+            <a href="<?= BASE_URL ?>modules/dosen/index.php?q=Teknik Informatika"
+              class="btn btn-sm w-100 rounded-3 text-white"
+              style="background-color: var(--prussian-blue); font-size: 0.85rem; font-weight: 600;">
+              Daftar Dosen <i class="fi fi-rr-arrow-right ms-1" style="font-size: 0.75rem;"></i>
+            </a>
+          </div>
         </div>
       </div>
 
       <div class="card border-0 shadow-sm rounded-4 me-3"
-        style="min-width: 250px; flex: 0 0 auto; background-color: var(--cream);">
-        <div class="card-body p-4">
-          <div class="d-flex justify-content-between align-items-center mb-3">
-            <span class="badge bg-success-subtle text-success rounded-3 px-3 py-2">SI</span>
-            <i class="fi fi-rr-stats text-muted fs-4"></i>
+        style="min-width: 260px; flex: 0 0 auto; background-color: var(--cream)">
+        <div class="card-body p-4 d-flex flex-column justify-content-between" style="min-height: 200px;">
+          <div>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge bg-success-subtle text-success rounded-3 px-3 py-2">SI</span>
+              <i class="fi fi-rr-stats text-muted fs-4"></i>
+            </div>
+            <h6 class="text-muted mb-1 text-uppercase fw-semibold" style="font-size: 0.75rem; letter-spacing: 0.5px;">
+              Sistem Informasi</h6>
+            <h2 class="fw-bold mb-0" style="color: var(--prussian-blue);"><?= $totDsnSifo ?> <span
+                class="fs-6 fw-normal text-muted">Dosen</span></h2>
           </div>
-          <h6 class="text-muted mb-1 text-uppercase fw-semibold" style="font-size: 0.75rem; letter-spacing: 0.5px;">
-            Sistem Informasi</h6>
-          <h2 class="fw-bold mb-0" style="color: var(--prussian-blue);"><?= $totDsnSifo ?> <span
-              class="fs-6 fw-normal text-muted">Dosen</span></h2>
+          <div class="mt-3">
+            <a href="<?= BASE_URL ?>modules/dosen/index.php?q=Sistem Informasi"
+              class="btn btn-sm w-100 rounded-3 text-white"
+              style="background-color: var(--prussian-blue); font-size: 0.85rem; font-weight: 600;">
+              Daftar Dosen <i class="fi fi-rr-arrow-right ms-1" style="font-size: 0.75rem;"></i>
+            </a>
+          </div>
         </div>
       </div>
 
       <div class="card border-0 shadow-sm rounded-4 me-3"
-        style="min-width: 250px; flex: 0 0 auto;background-color: var(--cream);">
-        <div class="card-body p-4">
-          <div class="d-flex justify-content-between align-items-center mb-3">
-            <span class="badge bg-info-subtle text-info rounded-3 px-3 py-2">IK</span>
-            <i class="fi fi-rr-computer text-muted fs-4"></i>
+        style="min-width: 260px; flex: 0 0 auto; background-color: var(--cream)">
+        <div class="card-body p-4 d-flex flex-column justify-content-between" style="min-height: 200px;">
+          <div>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge bg-info-subtle text-info rounded-3 px-3 py-2">IK</span>
+              <i class="fi fi-rr-computer text-muted fs-4"></i>
+            </div>
+            <h6 class="text-muted mb-1 text-uppercase fw-semibold" style="font-size: 0.75rem; letter-spacing: 0.5px;">
+              Ilmu Komputer</h6>
+            <h2 class="fw-bold mb-0" style="color: var(--prussian-blue);"><?= $totDsnIlkom ?> <span
+                class="fs-6 fw-normal text-muted">Dosen</span></h2>
           </div>
-          <h6 class="text-muted mb-1 text-uppercase fw-semibold" style="font-size: 0.75rem; letter-spacing: 0.5px;">Ilmu
-            Komputer</h6>
-          <h2 class="fw-bold mb-0" style="color: var(--prussian-blue);"><?= $totDsnIlkom ?> <span
-              class="fs-6 fw-normal text-muted">Dosen</span></h2>
+          <div class="mt-3">
+            <a href="<?= BASE_URL ?>modules/dosen/index.php?q=Ilmu Komputer"
+              class="btn btn-sm w-100 rounded-3 text-white"
+              style="background-color: var(--prussian-blue); font-size: 0.85rem; font-weight: 600;">
+              Daftar Dosen <i class="fi fi-rr-arrow-right ms-1" style="font-size: 0.75rem;"></i>
+            </a>
+          </div>
         </div>
       </div>
 
       <div class="card border-0 shadow-sm rounded-4 me-3"
-        style="min-width: 250px; flex: 0 0 auto;background-color: var(--cream);">
-        <div class="card-body p-4">
-          <div class="d-flex justify-content-between align-items-center mb-3">
-            <span class="badge bg-warning-subtle text-warning rounded-3 px-3 py-2">TE</span>
-            <i class="fi fi-rr-bolt text-muted fs-4"></i>
+        style="min-width: 260px; flex: 0 0 auto; background-color: var(--cream)">
+        <div class="card-body p-4 d-flex flex-column justify-content-between" style="min-height: 200px;">
+          <div>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge bg-warning-subtle text-warning rounded-3 px-3 py-2">TE</span>
+              <i class="fi fi-rr-bolt text-muted fs-4"></i>
+            </div>
+            <h6 class="text-muted mb-1 text-uppercase fw-semibold" style="font-size: 0.75rem; letter-spacing: 0.5px;">
+              Teknik Elektro</h6>
+            <h2 class="fw-bold mb-0" style="color: var(--prussian-blue);"><?= $totDsnElka ?> <span
+                class="fs-6 fw-normal text-muted">Dosen</span></h2>
           </div>
-          <h6 class="text-muted mb-1 text-uppercase fw-semibold" style="font-size: 0.75rem; letter-spacing: 0.5px;">
-            Teknik Elektro</h6>
-          <h2 class="fw-bold mb-0" style="color: var(--prussian-blue);"><?= $totDsnElka ?> <span
-              class="fs-6 fw-normal text-muted">Dosen</span></h2>
+          <div class="mt-3">
+            <a href="<?= BASE_URL ?>modules/dosen/index.php?q=Teknik Elektro"
+              class="btn btn-sm w-100 rounded-3 text-white"
+              style="background-color: var(--prussian-blue); font-size: 0.85rem; font-weight: 600;">
+              Daftar dosen<i class="fi fi-rr-arrow-right ms-1" style="font-size: 0.75rem;"></i>
+            </a>
+          </div>
         </div>
       </div>
 
       <div class="card border-0 shadow-sm rounded-4 me-3"
-        style="min-width: 250px; flex: 0 0 auto; background-color: var(--cream);">
-        <div class="card-body p-4">
-          <div class="d-flex justify-content-between align-items-center mb-3">
-            <span class="badge bg-danger-subtle text-danger rounded-3 px-3 py-2">SD</span>
-            <i class="fi fi-rr-chart-pie-alt text-muted fs-4"></i>
+        style="min-width: 260px; flex: 0 0 auto; background-color: var(--cream)">
+        <div class="card-body p-4 d-flex flex-column justify-content-between" style="min-height: 200px;">
+          <div>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge bg-danger-subtle text-danger rounded-3 px-3 py-2">SD</span>
+              <i class="fi fi-rr-chart-pie-alt text-muted fs-4"></i>
+            </div>
+            <h6 class="text-muted mb-1 text-uppercase fw-semibold" style="font-size: 0.75rem; letter-spacing: 0.5px;">
+              Sains Data</h6>
+            <h2 class="fw-bold mb-0" style="color: var(--prussian-blue);"><?= $totDsnSada ?> <span
+                class="fs-6 fw-normal text-muted">Dosen</span></h2>
           </div>
-          <h6 class="text-muted mb-1 text-uppercase fw-semibold" style="font-size: 0.75rem; letter-spacing: 0.5px;">
-            Sains Data</h6>
-          <h2 class="fw-bold mb-0" style="color: var(--prussian-blue);"><?= $totDsnSada ?> <span
-              class="fs-6 fw-normal text-muted">Dosen</span></h2>
+          <div class="mt-3">
+            <a href="<?= BASE_URL ?>modules/dosen/index.php?q=Sains Data" class="btn btn-sm w-100 rounded-3 text-white"
+              style="background-color: var(--prussian-blue); font-size: 0.85rem; font-weight: 600;">
+              Daftar Dosen <i class="fi fi-rr-arrow-right ms-1" style="font-size: 0.75rem;"></i>
+            </a>
+          </div>
         </div>
       </div>
 
       <div class="card border-0 shadow-sm rounded-4 me-3"
-        style="min-width: 250px; flex: 0 0 auto; background-color: var(--cream);">
-        <div class="card-body p-4">
-          <div class="d-flex justify-content-between align-items-center mb-3">
-            <span class="badge text-secondary rounded-3 px-3 py-2" style="background-color: #e2e8f0;">BD</span>
-            <i class="fi fi-rr-shop text-muted fs-4"></i>
+        style="min-width: 260px; flex: 0 0 auto; background-color: var(--cream)">
+        <div class="card-body p-4 d-flex flex-column justify-content-between" style="min-height: 200px;">
+          <div>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge text-secondary rounded-3 px-3 py-2" style="background-color: #e2e8f0;">BS</span>
+              <i class="fi fi-rr-chart-pie-alt text-muted fs-4"></i>
+            </div>
+            <h6 class="text-muted mb-1 text-uppercase fw-semibold" style="font-size: 0.75rem; letter-spacing: 0.5px;">
+              Bisnis Digital</h6>
+            <h2 class="fw-bold mb-0" style="color: var(--prussian-blue);"><?= $totDsnBisdi ?> <span
+                class="fs-6 fw-normal text-muted">Dosen</span></h2>
           </div>
-          <h6 class="text-muted mb-1 text-uppercase fw-semibold" style="font-size: 0.75rem; letter-spacing: 0.5px;">
-            Bisnis Digital</h6>
-          <h2 class="fw-bold mb-0" style="color: var(--prussian-blue);"><?= $totDsnBisdi ?> <span
-              class="fs-6 fw-normal text-muted">Dosen</span></h2>
+          <div class="mt-3">
+            <a href="<?= BASE_URL ?>modules/dosen/index.php?q=Bisnis Digital"
+              class="btn btn-sm w-100 rounded-3 text-white"
+              style="background-color: var(--prussian-blue); font-size: 0.85rem; font-weight: 600;">
+              Daftar Dosen<i class="fi fi-rr-arrow-right ms-1" style="font-size: 0.75rem;"></i>
+            </a>
+          </div>
         </div>
       </div>
 
-      <div class="card border-0 shadow-sm rounded-4 me-0"
-        style="min-width: 250px; flex: 0 0 auto; background-color: var(--cream);">
-        <div class="card-body p-4">
-          <div class="d-flex justify-content-between align-items-center mb-3">
-            <span class="badge bg-dark-subtle text-muted rounded-3 px-3 py-2">TI</span>
-            <i class="fi fi-rr-network text-muted fs-4"></i>
+      <div class="card border-0 shadow-sm rounded-4 me-3"
+        style="min-width: 260px; flex: 0 0 auto; background-color: var(--cream)">
+        <div class="card-body p-4 d-flex flex-column justify-content-between" style="min-height: 200px;">
+          <div>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge bg-dark-subtle text-muted rounded-3 px-3 py-2">TI</span>
+              <i class="fi fi-rr-chart-pie-alt text-muted fs-4"></i>
+            </div>
+            <h6 class="text-muted mb-1 text-uppercase fw-semibold" style="font-size: 0.75rem; letter-spacing: 0.5px;">
+              Teknologi Informasi</h6>
+            <h2 class="fw-bold mb-0" style="color: var(--prussian-blue);"><?= $totDsnTI ?> <span
+                class="fs-6 fw-normal text-muted">Dosen</span></h2>
           </div>
-          <h6 class="text-muted mb-1 text-uppercase fw-semibold" style="font-size: 0.75rem; letter-spacing: 0.5px;">
-            Teknologi Informasi</h6>
-          <h2 class="fw-bold mb-0" style="color: var(--prussian-blue);"><?= $totDsnTI ?> <span
-              class="fs-6 fw-normal text-muted">Dosen</span></h2>
+          <div class="mt-3">
+            <a href="<?= BASE_URL ?>modules/dosen/index.php?q=Teknologi Informasi"
+              class="btn btn-sm w-100 rounded-3 text-white"
+              style="background-color: var(--prussian-blue); font-size: 0.85rem; font-weight: 600;">
+              Daftar Dosen <i class="fi fi-rr-arrow-right ms-1" style="font-size: 0.75rem;"></i>
+            </a>
+          </div>
         </div>
       </div>
 
     </div>
-    <?php require_once '../../templates/footer.php'; ?>
+  </div>
+</main>
+<?php require_once '../../templates/footer.php'; ?>

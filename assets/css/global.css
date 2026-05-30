@@ -42,3 +42,53 @@ body, .main-navbar, .sidebar {
 [data-bs-theme="dark"] .form-control::placeholder {
     color: #718096;
 }
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    background: #ffffff;
+}
+
+[data-bs-theme="dark"] .footer {
+    background: #1a1f2e;
+    border-top-color: rgba(255,255,255,0.08);
+}
+
+.footer strong {
+    color: var(--prussian-blue);
+}
+
+[data-bs-theme="dark"] .footer strong {
+    color: var(--gold);
+}
+
+.github-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    color: var(--text-muted);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.github-link:hover {
+    color: var(--prussian-blue);
+}
+
+[data-bs-theme="dark"] .github-link:hover {
+    color: var(--gold);
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        gap: 0.4rem;
+        text-align: center;
+    }
+}
