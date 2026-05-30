@@ -69,6 +69,7 @@ Project/
 │   │   ├── variables.css   # Custom Properties (Palet Warna)
 │   │   ├── global.css      # Style global & Dark Mode overrides
 │   │   └── sidebar.css     # Styling komponen sidebar
+│   ├── docs/               # Documentasi halaman web
 │   └── js/
 │       └── app.js          # Logika Dark Mode & Sidebar Toggle
 │
@@ -85,6 +86,7 @@ Project/
 │   ├── mahasiswa/          # CRUD Mahasiswa (index, create, edit, delete)
 │   ├── dosen/              # CRUD Dosen (index, create, edit, delete)
 │   └── profil/             # Manajemen profil Admin
+│   └── prodi/              # Manajemen ringkasan jumlah mahasiswa dan dosen per prodi
 │
 ├── 📂 templates/
 │   ├── header.php          # Navbar, aset CSS/JS, session init
